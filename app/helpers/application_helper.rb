@@ -16,4 +16,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    AlfredosViewTool::Renderer.copyright 'Alfredo Urdaneta', 'All rights reserved'
+  end
 end
