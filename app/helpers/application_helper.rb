@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    AlfredosViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    AlfredosViewTool::Renderer.copyright 'Alfredo Urdaneta', 'All rights reserved'
   end
 
   def nav_items
