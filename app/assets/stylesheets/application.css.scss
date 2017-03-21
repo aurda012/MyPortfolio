@@ -263,7 +263,8 @@ nav li {
 }
 nav a {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: 5px;
   color: #222;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -411,10 +412,11 @@ nav a:hover {
   font-family: 'Work Sans', sans-serif;
   color: #111;
   font-size: 2.3em;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  text-shadow: 5px;
 }
 .animate-container {
   margin-top: -210px;
@@ -959,6 +961,7 @@ canvas {
   font-family: 'Work Sans', sans-serif;
   font-weight: 200;
   text-align: center;
+  padding-top: 15px;
 }
 .footer-tree-container {
   display: none;
