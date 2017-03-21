@@ -360,7 +360,7 @@ nav a:hover {
   box-shadow: 0px 0px 3px #000;
   border-bottom: 25px double #546935;
 }
-.hunting-header {
+.hunting-header-left {
   padding: 40px 80px;
   font-family: 'Abel';
   text-transform: uppercase;
@@ -369,6 +369,16 @@ nav a:hover {
   color: #ffdc00;
   font-size: 2em;
   width: 860px;
+}
+.hunting-header-right {
+  padding-top: 40px;
+  text-align: right;
+  font-family: 'Abel';;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #ffdc00;
+  font-size: 1.8em;
+  width: 1200px;
 }
 .header-container {
   width: 100%;
