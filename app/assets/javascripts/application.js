@@ -17,13 +17,13 @@
 //= require cocoon
 //= require gritter
 //= require cable
+//= require turbolinks
 //= require angular
 //= require angular-animate
 //= require nprogress
 //= require nprogress-ajax
 //= require nprogress-angular
 //= require nprogress-turbolinks
-//= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 
