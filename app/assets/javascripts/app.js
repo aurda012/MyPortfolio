@@ -179,7 +179,7 @@ $(document).ready(function(){
 
 NProgress.start();
 $.html5Loader({
-    filesToLoad:'../javascripts/load.json',
+    filesToLoad: url('load.json'),
     onUpdate: function(perc){
       NProgress.set(perc/100);
     },
