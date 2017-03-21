@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 
 /*
@@ -233,7 +234,7 @@ h6, .h6 {
 }
 
 .app-card-container {
-  color: black;
+  color: #333;
   text-align: left;
 }
 
@@ -241,12 +242,28 @@ h6, .h6 {
   padding: 40px;
 }
 
+.contact-card-container {
+  color: #333;
+  text-align: center;
+}
+
+.contact-card-container a {
+  color: #0275d8;
+}
+
+.contact-card-container > .card {
+  width: 46rem;
+  padding: 40px;
+  margin: 0 auto;
+  float: none;
+}
+
 .profile-img {
   border: 1px solid grey;
 }
 
 .app-card-container a {
-  color: blue;
+  color: #0275d8;
 }
 
 .card-block {
@@ -257,4 +274,8 @@ h6, .h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.social-links li {
+  font-size: 2.5em;
 }
