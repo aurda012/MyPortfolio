@@ -25,4 +25,4 @@ ready = ->
     return
   return
 
-$(document).on("page:load") ready
+$(document).ready ready

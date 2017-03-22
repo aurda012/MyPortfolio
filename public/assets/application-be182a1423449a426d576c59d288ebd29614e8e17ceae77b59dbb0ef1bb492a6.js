@@ -3624,7 +3624,7 @@ jQuery.ready.promise = function( obj ) {
 
 		readyList = jQuery.Deferred();
 
-		// Catch cases where $(document).on("page:load")() is called
+		// Catch cases where $(document).ready() is called
 		// after the browser event has already occurred.
 		// Support: IE6-10
 		// Older IE sometimes signals "interactive" too soon
@@ -71101,7 +71101,7 @@ function Trigger(top, height){
 
 var headerContainer = new Trigger(".header-container", ".header-container");
 
-$(document).on("page:load")(function(){
+$(document).ready(function(){
   var containerTop = $(".header-container").offset().top;
   var containerHeight = $(".header-container").outerHeight();
 
@@ -71288,14 +71288,14 @@ $.html5Loader({
     }
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
   $('.logo-container').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 1500);
     return false;
   });
 });
 
-$(document).on("page:load")(function(){
+$(document).ready(function(){
     var icon = $('.hunting-icon');
     var nav = $('nav');
     var safety = $('.hunter-safety-container');
@@ -71312,7 +71312,7 @@ $(document).on("page:load")(function(){
   });
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
 
   var canvas = document.getElementById("myBarChart");
   var ctx = canvas.getContext("2d");
@@ -71362,7 +71362,7 @@ $(document).on("page:load")(function (){
   });
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
 
   var canvas = document.getElementById("myDoughnutChart");
   var ctx = canvas.getContext("2d");
@@ -71405,7 +71405,7 @@ $(document).on("page:load")(function (){
 });
 
 
-$(document).on("page:load")(function () {
+$(document).ready(function () {
     $(document).on("scroll", onScroll);
 
     //smoothscroll
@@ -71504,7 +71504,7 @@ if($(window).width() <= 700){
     });
   };
 
-  $(document).on("page:load")(ready);
+  $(document).ready(ready);
 
 }).call(this);
 (function() {
@@ -75115,7 +75115,7 @@ function Trigger(top, height){
 
 var headerContainer = new Trigger(".header-container", ".header-container");
 
-$(document).on("page:load")(function(){
+$(document).ready(function(){
   var containerTop = $(".header-container").offset().top;
   var containerHeight = $(".header-container").outerHeight();
 
@@ -75302,14 +75302,14 @@ $.html5Loader({
     }
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
   $('.logo-container').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 1500);
     return false;
   });
 });
 
-$(document).on("page:load")(function(){
+$(document).ready(function(){
     var icon = $('.hunting-icon');
     var nav = $('nav');
     var safety = $('.hunter-safety-container');
@@ -75326,7 +75326,7 @@ $(document).on("page:load")(function(){
   });
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
 
   var canvas = document.getElementById("myBarChart");
   var ctx = canvas.getContext("2d");
@@ -75376,7 +75376,7 @@ $(document).on("page:load")(function (){
   });
 });
 
-$(document).on("page:load")(function (){
+$(document).ready(function (){
 
   var canvas = document.getElementById("myDoughnutChart");
   var ctx = canvas.getContext("2d");
@@ -75419,7 +75419,7 @@ $(document).on("page:load")(function (){
 });
 
 
-$(document).on("page:load")(function () {
+$(document).ready(function () {
     $(document).on("scroll", onScroll);
 
     //smoothscroll

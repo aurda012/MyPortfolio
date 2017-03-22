@@ -52,7 +52,5 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem "lazyload-rails"
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
-gem 'nprogress-rails'
-gem 'angularjs-rails'
 
 ruby "2.4.0"

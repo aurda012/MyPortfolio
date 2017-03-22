@@ -1,20 +1,11 @@
 /*
  *= require_tree .
  *= require_self
- *= require nprogress
- *= require nprogress-bootstrap
- *= require nprogress-turbolinks5
  *= require font-awesome
  */
 
 @import 'font-awesome';
 @import 'normalize';
-@import 'nprogress';
-@import 'nprogress-bootstrap';
-
-$nprogress-color: #f1f1f1;
-$nprogress-height: 10px;
-$nprogress-zindex: 10100;
 
 html {
   font-family: sans-serif;
