@@ -26,4 +26,3 @@
 //= require nprogress-turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-
