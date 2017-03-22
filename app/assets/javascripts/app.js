@@ -177,29 +177,6 @@ $(document).ready(function(){
 
 });
 
-NProgress.start();
-$.html5Loader({
-    filesToLoad:'load.json',
-    onUpdate: function(perc){
-      NProgress.set(perc/100);
-    },
-    stopExecution:true,
-    onComplete: function () {
-      NProgress.done(true);
-      setTimeout(function(){
-        $(".header-container").animate({
-          opacity:1
-        },'slow');
-      },2000);
-      console.log("All the assets are loaded!");
-    },
-    onElementLoaded: function ( obj, elm ){
-      if(!~$.inArray(obj.type,["TEXT","SCRIPT","CSS", "IMAGE"])) {
-        $(".header-container").append(elm);
-      }
-    }
-});
-
 $(document).ready(function (){
   $('.logo-container').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 1500);
