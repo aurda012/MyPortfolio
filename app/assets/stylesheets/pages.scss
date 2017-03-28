@@ -857,7 +857,7 @@ canvas {
   float: left;
   margin-bottom: 62px;
   width: 100%;
-  height: 75vh;
+  height: relative;
 }
 .contact-header {
   font-family: 'Work Sans', sans-serif;
@@ -873,6 +873,7 @@ canvas {
   font-family: 'Work Sans', sans-serif;
   padding: 0 115px 50px 90px;
   margin-top: 90px;
+  margin-bottom: 80px;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
