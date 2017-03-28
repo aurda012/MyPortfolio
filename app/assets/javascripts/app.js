@@ -157,7 +157,7 @@ $(document).ready(function (){
     labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
     datasets: [
         {
-            label: "SKILLS",
+            label: "Skills",
             backgroundColor: [
                 'rgba(113,120,72, 1)',
                 'rgba(57,61,29, 1)',
@@ -196,6 +196,49 @@ $(document).ready(function (){
       }
   });
 });
+
+$(document).ready(function (){
+
+  var canvas = document.getElementById("myDoughnutChart");
+  var ctx = canvas.getContext("2d");
+
+
+  var data = {
+    labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
+    datasets: [
+        {
+            label: "Skills",
+            backgroundColor: [
+                'rgba(113,120,72, 1)',
+                'rgba(57,61,29, 1)',
+                'rgba(239,242,183, 1)',
+                'rgba(147,131,86, 1)',
+                'rgba(198,34,1, 1)',
+                'rgba(51,51,43, 1)'
+            ],
+            borderColor: [
+              'rgba(0, 0, 0, .2)',
+              'rgba(0, 0, 0, .2)',
+              'rgba(0, 0, 0, .2)',
+              'rgba(0, 0, 0, .2)',
+              'rgba(0, 0, 0, .2)',
+              'rgba(0, 0, 0, .2)'
+            ],
+            data: [95, 75, 90, 60, 50, 70],
+        }
+    ]
+  };
+
+  Chart.defaults.global.defaultFontColor = "#fff";
+  Chart.scaleService.defaults.radialLinear.ticks.backdropColor = 'rgba(0, 0, 0, 0)';
+  Chart.defaults.global.legend.display = false;
+
+  var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data
+  });
+});
+
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
