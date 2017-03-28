@@ -971,7 +971,7 @@ canvas {
     color: grey;
   }
   .contact-container {
-    margin-bottom: 0;
+    height: 45vh;
   }
   .footer {
     display: none;
@@ -1018,7 +1018,7 @@ canvas {
   .process-text {
     font-size: 0.9em;
   }
-  .tree-container {
+  .road-container {
     display: none;
   }
   .inner-about {
@@ -1064,13 +1064,14 @@ canvas {
     display: block;
   }
   .tools-container {
-    height: 55vh;
+    height: 65vh;
   }
   .chart-title {
     font-size: 3em;
     padding: 20% 0;
   }
   .social-container {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1086,6 +1087,11 @@ canvas {
     padding: 0 50px 50px;
     font-size: 1.25em;
   }
+
+  .contact-blog {
+    padding: 0 50px 50px;
+  }
+
   .social-icon {
     font-size: 1em;
     padding: 25px;
@@ -1127,7 +1133,7 @@ canvas {
     font-size: 3em;
   }
   .process-container {
-    height: 2000px;
+    height: 1800px;
   }
   .process-text-container {
     width: 100%;
@@ -1165,10 +1171,10 @@ canvas {
     margin-top: 100px;
   }
   .work-header-container {
-    display: block;
+    display: none;
   }
   .work-panel-container {
-    height: 30vh;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
