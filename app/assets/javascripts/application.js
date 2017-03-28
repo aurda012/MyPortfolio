@@ -15,9 +15,9 @@
 //= require jquery-ui
 //= require tether
 //= require jquery.lazyload.min
-//= require app
-//= require cocoon
 //= require gritter
+//= require cocoon
+//= require app
 //= require cable
 //= require turbolinks
 //= require_tree .
