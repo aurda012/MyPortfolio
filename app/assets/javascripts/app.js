@@ -1,18 +1,3 @@
-function Trigger(top, height){
-  this.top = top;
-  this.height = height;
-
-  this.containerTop = function(){
-    $(this.top).offset().top;
-  }
-
-  this.containerHeight = function(){
-    $(this.height).outerHeight();
-  }
-}
-
-var headerContainer = new Trigger(".header-container", ".header-container");
-
 $(document).ready(function(){
   var containerTop = $(".header-container").offset().top;
   var containerHeight = $(".header-container").outerHeight();
@@ -31,18 +16,6 @@ $(document).ready(function(){
 
   var workTop = $(".work-container").offset().top;
   var workHeight = $(".work-container").outerHeight();
-
-  var blazeTop = $(".work-blaze").offset().top;
-  var blazeHeight = $(".work-blaze").outerHeight();
-
-  var opcodeTop = $(".work-opcode").offset().top;
-  var opcodeHeight = $(".work-opcode").outerHeight();
-
-  var weatherTop = $(".work-weather").offset().top;
-  var weatherHeight = $(".work-weather").outerHeight();
-
-  var bandaloopTop = $(".work-bandaloop").offset().top;
-  var bandaloopHeight = $(".work-bandaloop").outerHeight();
 
   var portfolioTop = $(".work-portfolio").offset().top;
   var portfolioHeight = $(".work-portfolio").outerHeight();
@@ -97,50 +70,6 @@ $(document).ready(function(){
         return false;
       }
     });
-
-  $(window).scroll(function(){
-      if($(window).scrollTop() > (blazeTop - 500)){
-         $( ".work-blaze1" ).addClass( "work-panel-container-slide" );
-         $( ".work-blaze2" ).addClass( "work-panel-ribbon-slide" );
-         $( ".work-blaze3" ).addClass( "work-panel-ribbon-slide" );
-      }
-      else {
-        return false;
-      }
-    });
-
-  $(window).scroll(function(){
-      if($(window).scrollTop() > (opcodeTop - 575)){
-         $( ".work-opcode1" ).addClass( "work-panel-container-slide" );
-         $( ".work-opcode2" ).addClass( "work-panel-ribbon-slide" );
-         $( ".work-opcode3" ).addClass( "work-panel-ribbon-slide" );
-      }
-      else {
-        return false;
-      }
-    });
-
-  $(window).scroll(function(){
-      if($(window).scrollTop() > (weatherTop - 575)){
-         $( ".work-weather1" ).addClass( "work-panel-container-slide" );
-         $( ".work-weather2" ).addClass( "work-panel-ribbon-slide" );
-         $( ".work-weather3" ).addClass( "work-panel-ribbon-slide" );
-      }
-      else {
-        return false;
-      }
-    });
-
-    $(window).scroll(function(){
-        if($(window).scrollTop() > (bandaloopTop - 575)){
-           $( ".work-bandaloop1" ).addClass( "work-panel-container-slide" );
-           $( ".work-bandaloop2" ).addClass( "work-panel-ribbon-slide" );
-           $( ".work-bandaloop3" ).addClass( "work-panel-ribbon-slide" );
-        }
-        else {
-          return false;
-        }
-      });
 
       $(window).scroll(function(){
           if($(window).scrollTop() > (portfolioTop - 575)){
@@ -211,7 +140,7 @@ $(document).ready(function (){
     labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
     datasets: [
         {
-            label: "Skills",
+            label: "SKILLS",
             backgroundColor: [
                 'rgba(113,120,72, 1)',
                 'rgba(57,61,29, 1)',
@@ -228,7 +157,7 @@ $(document).ready(function (){
               'rgba(0, 0, 0, .2)',
               'rgba(0, 0, 0, .2)'
             ],
-            data: [80, 60, 80, 50, 85, 65, 0],
+            data: [95, 75, 90, 60, 50, 70, 0],
         }
     ]
   };
@@ -250,49 +179,6 @@ $(document).ready(function (){
       }
   });
 });
-
-$(document).ready(function (){
-
-  var canvas = document.getElementById("myDoughnutChart");
-  var ctx = canvas.getContext("2d");
-
-
-  var data = {
-    labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
-    datasets: [
-        {
-            label: "Skills",
-            backgroundColor: [
-                'rgba(113,120,72, 1)',
-                'rgba(57,61,29, 1)',
-                'rgba(239,242,183, 1)',
-                'rgba(147,131,86, 1)',
-                'rgba(198,34,1, 1)',
-                'rgba(51,51,43, 1)'
-            ],
-            borderColor: [
-              'rgba(0, 0, 0, .2)',
-              'rgba(0, 0, 0, .2)',
-              'rgba(0, 0, 0, .2)',
-              'rgba(0, 0, 0, .2)',
-              'rgba(0, 0, 0, .2)',
-              'rgba(0, 0, 0, .2)'
-            ],
-            data: [95, 75, 90, 60, 50, 70],
-        }
-    ]
-  };
-
-  Chart.defaults.global.defaultFontColor = "#fff";
-  Chart.scaleService.defaults.radialLinear.ticks.backdropColor = 'rgba(0, 0, 0, 0)';
-  Chart.defaults.global.legend.display = false;
-
-  var myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data
-  });
-});
-
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
@@ -333,11 +219,3 @@ function onScroll(event){
         }
     });
 }
-
-if($(window).width() <= 700){
-
-    $('.work-item-container').click(function(){
-      $(this).children('.work-panel-ribbon').toggleClass('show');
-    });
-
- }

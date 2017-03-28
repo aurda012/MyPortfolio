@@ -6,15 +6,15 @@
         <div class="logo-text">AU</div>
       </div>
       <ul>
-        <li><a href="#process" class="process-link">Process</a></li>
-        <li><a href="#work" class="work-link">Work</a></li>
-        <li><a href="#toolkit" class="about-link">Toolkit</a></li>
         <li><a href="#about" class="about-link">About</a></li>
+        <li><a href="#process" class="process-link">Process</a></li>
+        <li><a href="#portfolio" class="portfolio-link">Portfolio</a></li>
+        <li><a href="#skills" class="skills-link">Skills</a></li>
         <li><a href="#contact" class="contact-link">Contact</a></li>
-        <li><a href="/blogs" class="contact-link">Blog</a></li><i class="hunting-icon fa fa-exclamation-triangle fa-2x"></i>
+        <li><%= link_to 'Blog', blogs_path %></li><i class="hunting-icon fa fa-sign-in fa-2x"></i>
       </ul>
       <div class="hunter-safety-container">
-        <h1 class="hunting-header-left">Want to give feedback on my blogs and portfolios? <%= login_helper 'btn btn-lg btn-secondary' %></h1>
+        <h1 class="hunting-header-left">Want to give feedback on my blogs and portfolios?</h1>
       </div>        
     </nav>
     <div class="header-container">
@@ -31,6 +31,15 @@
         </div>
       </div>
     </div>
+    <div id="about" class="about-container">
+      <div class="road-container"><i aria-hidden="true" class="dirigo fa fa-road"></i></div>
+      <div class="inner-about">
+        <h1>I am bored by convention.</h1>
+        <p>
+           A common trait among gifted students, I started working at a law firm when I was 16 and began taking college classes to meet my high school requirements.  My motivation was a car and relief from the stiflingly rigid secondary school system.  When I enrolled in college full-time, I found learning by memorization to be pointless.  I thrive by doing and achieving results.  I took up coding as a hobby and decided to make it my career.  
+        </p> 
+      </div>
+    </div>
     <div id="process" class="process-container">
       <h1 class="process-title">Process</h1>
       <div class="process-inner-container">
@@ -38,13 +47,13 @@
         <div class="process-left-container first-process"><i class="process-icon fa fa-pencil fa-4x"></i>
           <div class="process-text-container">
             <div class="process-text-header no-margin-top">Design</div>
-            <p class="process-text">It starts with the design. Whether it's on a napkin or in a program like Sketch, it starts with having a basic outline of how we're going to solve a problem. After gathering data and looking at the trends, I like to create a wireframe and turn it into a working prototype. Test, test, and test some more until we're ready to develop.</p>
+            <p class="process-text">It starts with an idea. Whether it's on paper or in a program like Sketch, it starts with having a basic outline of how we're going to solve a problem. After gathering data and looking at the trends, I like to create an ideal design blueprint for what I will be creating.</p>
           </div>
         </div>
         <div class="process-right-container second-process"><i class="process-icon fa fa-code fa-4x icon-right"></i>
           <div class="process-text-container right-process-text-container">
             <div class="process-text-header">Develop</div>
-            <p class="process-text">Once I have a clear design mocked up, it's time to start coding. I like to create as much as I can with HTML and CSS only using JavaScript and other libraies when necessary. Optimization and page load times are key, while still being able to function across all platforms. Front-end frameworks like Angular & React, help the development stage get faster, more efficient, and more functional than ever before. While new back-end frameworks like Ruby on Rails allow for a broad range of data customization and dynamic content generation. It's an ongoing learning process with new technologies coming out every day.</p>
+            <p class="process-text">Once I have a clear design mocked up, it's time to start coding. I start by creating and testing all my backend features to make sure the base of my application will work. Back-end frameworks like Ruby on Rails or Node allow for a broad range of data customization and dynamic content generation. Optimization and page load times are key, while still being able to function across all platforms. Front-end frameworks like Bootstrap help the development stage get faster, more efficient, and more functional than ever before. It's an ongoing learning process with new technologies coming out every day.</p>
           </div>
         </div>
         <div class="process-left-container third-process"><i class="process-icon fa fa-ship fa-4x"></i>
@@ -56,96 +65,20 @@
         <div class="process-right-container extra-padding-bottom fourth-process"><i class="process-icon fa fa-calendar fa-4x icon-right"></i>
           <div class="process-text-container right-process-text-container">
             <div class="process-text-header">Deliver</div>
-            <p class="process-text">The best stage during the whole process is delivering the product for the client. It's important to deliver a working product that scales and gets the job done on time. There's nothing like having a client appreciate the work and seeing their excitement makes the whole thing worth it. I strive to deliver the best product I can, with thoughtful design, bug free development, and extensive iterations to cater to all sorts of users. </p>
+            <p class="process-text">The best stage during the whole process is delivering the final product. It's important to deliver a working product that scales and gets the job done on time. There's nothing like seeing my initially vague idea become reality. It makes the whole process worth it. I strive to deliver the best product I can, with thoughtful design, bug free development, and extensive iterations to cater to all sorts of users. </p>
           </div>
         </div>
       </div>
     </div>
-    <div id="work" class="work-container">
+    <div id="portfolio" class="work-container">
       <div class="work-header-container">
         <h1 class="work-header">Work</h1>
-      </div>
-      <div class="work-item-container work-blaze">
-        <div class="work-panel-container blaze work-background work-blaze1">
-          <h1 class="mobile-logo blaze-logo">Blaze</h1><a href="http://www.kylefraser.net/blaze/public">
-            <div class="work-button"> 
-              <p>View Live</p>
-            </div></a>
-        </div>
-        <div class="work-panel-ribbon blaze-ribbon work-blaze2">
-          <div class="work-text-container work-blaze3">
-            <h1 class="blaze-logo">Blaze</h1>
-            <h3 class="work-role-title">Role</h3>
-            <h2 class="work-role-description">Front End - Development - Design</h2>
-            <h3 class="work-role-title">Tools</h3>
-            <h2 class="work-role-description">Jade - Stylus</h2>
-            <h3 class="work-role-title project-mission-title">Mission</h3>
-            <p class="work-mission-description">While working in a group of five, we were tasked with creating a product from brainstorming to concept in only four hours. This project was mentored by Tom Hughes, former creative director at Apple behind the brand identity of the Macintosh and co-founder of Idealab. Our group chose to create an interactive hiking app that focuses on community and individual responsibility while in nature. I was tasked with designing and developing the landing page in under three hours. </p>
-          </div>
-        </div>
-      </div>
-      <div class="work-item-container work-opcode">
-        <div class="work-panel-container opcode work-background work-opcode1">
-          <h1 class="mobile-logo opcode-logo">Operation<span class="text-white">Code</span></h1><a href="http://www.kylefraser.net/operationcode/public">
-            <div class="work-button"> 
-              <p>View Live</p>
-            </div></a>
-        </div>
-        <div class="work-panel-ribbon opcode-ribbon work-opcode2">
-          <div class="work-text-container work-opcode3">
-            <h1 class="opcode-logo">Operation<span class="text-white">Code</span></h1>
-            <h3 class="work-role-title">Role</h3>
-            <h2 class="work-role-description">Front End - Development - Design</h2>
-            <h3 class="work-role-title">Tools</h3>
-            <h2 class="work-role-description">Jade - Stylus</h2>
-            <h3 class="work-role-title project-mission-title">Mission</h3>
-            <p class="work-mission-description">During my first week at Startup Institute, there was a 24-Hour IdeaHack on the fourth day. The project was for OperationCode, a verteran non-profit to help transition military members into the tech scene. While working with a group of five, we brainstormed how to get more users to sign up, more partners to participate, and how to implement a better user experience. I was tasked with creating two new pages, one for users and one for partners. I was able to create two working prototypes in roughly eight hours and our group was chosen as the winners.</p>
-          </div>
-        </div>
-      </div>
-      <div class="work-item-container work-weather">
-        <div class="work-panel-container weather work-background work-weather1">
-          <h1 class="mobile-logo weather-logo">Angular Weather</h1><a href="http://www.kylefraser.net/angular-weather/public">
-            <div class="work-button"> 
-              <p>View Live</p>
-            </div></a>
-        </div>
-        <div class="work-panel-ribbon weather-ribbon work-weather2">
-          <div class="work-text-container work-weather3">
-            <h1 class="weather-logo">Angular Weather</h1>
-            <h3 class="work-role-title">Role</h3>
-            <h2 class="work-role-description">Front End - Development - Design</h2>
-            <h3 class="work-role-title">Tools</h3>
-            <h2 class="work-role-description">Jade - Stylus - Angular 1.x - Responsive</h2>
-            <h3 class="work-role-title project-mission-title">Mission</h3>
-            <p class="work-mission-description">For my first project into working with the new JavaScript front-end frameworks, I decided to create a dynamic weather application in AngularJS. This project involved using the WUnderground API to retrieve weather data as well as a user's dynamic location. It was a great way to show the power behind a frameworks scalability as well as pulling data in using API JSON data. This project is completely responsive and provides a quick glance at the upcoming week on both desktop and mobile.</p>
-          </div>
-        </div>
-      </div>
-      <div class="work-item-container work-bandaloop">
-        <div class="work-panel-container bandaloop work-background work-bandaloop1">
-          <h1 class="mobile-logo bandaloop-logo">Bandaloop</h1><a href="http://www.kylefraser.net/bandaloop/public">
-            <div class="work-button"> 
-              <p>View Live</p>
-            </div></a>
-        </div>
-        <div class="work-panel-ribbon bandaloop-ribbon work-bandaloop2">
-          <div class="work-text-container work-bandaloop3">
-            <h1 class="bandaloop-logo">Bandaloop</h1>
-            <h3 class="work-role-title">Role</h3>
-            <h2 class="work-role-description">Front End - Development - Design</h2>
-            <h3 class="work-role-title">Tools</h3>
-            <h2 class="work-role-description">Jade - Stylus - JavaScript - Responsive</h2>
-            <h3 class="work-role-title project-mission-title">Mission</h3>
-            <p class="work-mission-description">While thinking of a project to help expand my skills, I decided to take a local restaurant and create a new responsive webpage. I chose to re-design one of my favorite restaurants in Kennebunkport, Bandaloop. I wanted to deliver a clean, eye catching design that gave an insight to the restaurant and allowed for easy readibility of the food and bar menus. This project is also completely responsive and works on both mobile and desktop. </p>
-          </div>
-        </div>
       </div>
       <div class="work-item-container work-portfolio">
         <div class="work-panel-container portfolio work-background work-portfolio1">
           <h1 class="mobile-logo work-logo">Portfolio</h1><a href='/portfolios'>
             <div class="work-button"> 
-              <p>Portfolio</p>
+              <p>See Full Portfolio</p>
             </div></a>
         </div>
         <div class="work-panel-ribbon portfolio-ribbon work-portfolio2">
@@ -161,9 +94,9 @@
         </div>
       </div>
     </div>
-    <div id="toolkit" class="tools-container">
+    <div id="skills" class="tools-container">
       <div class="tools-header-container">
-        <h1 class="chart-title">Toolkit</h1>
+        <h1 class="chart-title">Skills</h1>
         <div class="chart-container bar-chart">
           <canvas id="myBarChart" width="200" height="200"></canvas>
         </div>
@@ -172,23 +105,15 @@
         </div>
       </div>
     </div>
-    <div id="about" class="about-container">
-      <div class="tree-container"><i aria-hidden="true" class="dirigo fa fa-tree"></i></div>
-      <div class="inner-about">
-        <p>
-          I am bored by convention. A common trait among gifted students, I started working at a law firm when I was 16 and began taking college classes to meet my high school requirements.  My motivation was a car and relief from the stiflingly rigid secondary school system.  When I enrolled in college full-time, I found learning by memorization to be pointless.  I thrive by doing and achieving results.  I took up coding as a hobby and decided to make it my career.  
-        </p> 
-      </div>
-    </div>
     <div id="contact" class="contact-container">
       <h1 class="contact-header">Let's talk about the next big thing.</h1>
       <div class="social-container"><a href="mailto:alfredo.i.urdaneta@gmail.com"><i class="social-icon fa fa-envelope fa-4x"></i></a><a href="http://www.linkedin.com/in/alfredourdaneta"><i class="social-icon fa fa-linkedin fa-4x"></i></a><a href="http://www.angel.co/alfredourdaneta"><i class="social-icon fa fa-angellist fa-4x"></i></a><a href="http://www.github.com/aurda012"><i class="social-icon fa fa-github fa-4x"></i></a></div>
     </div>
     <div class="footer">
-      <h4 class="footer-text">© 2017 | Alfredo Urdaneta All rights reserved </h4>
+      <h5 class="footer-text">© 2017 | Alfredo Urdaneta </h5>
     </div>
     <div class="footer-tree-container">
-      <div class="footer-icon-container"><i class="footer-icon-tree fa fa-tree fa-4x"></i></div>
-      <h1>© 2017 | Alfredo Urdaneta All rights reserved</h1>
+      <div class="footer-icon-container"><i class="footer-icon-tree fa fa-road fa-4x"></i></div>
+      <h1>© 2017 | Alfredo Urdaneta </h1>
   </body>
 </html>

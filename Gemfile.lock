@@ -44,13 +44,13 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (6.7.7.1)
       execjs
-    aws-sdk (2.8.9)
-      aws-sdk-resources (= 2.8.9)
-    aws-sdk-core (2.8.9)
+    aws-sdk (2.8.12)
+      aws-sdk-resources (= 2.8.12)
+    aws-sdk-core (2.8.12)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.8.9)
-      aws-sdk-core (= 2.8.9)
+    aws-sdk-resources (2.8.12)
+      aws-sdk-core (= 2.8.12)
     aws-sigv4 (1.0.0)
     bcrypt (3.1.11)
     bootstrap (4.0.0.alpha6)
@@ -149,7 +149,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_magick (4.6.1)
+    mini_magick (4.7.0)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
@@ -247,9 +247,9 @@ GEM
       memoizable (~> 0.4.2)
       naught (~> 1.1)
       simple_oauth (~> 0.3.1)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    uglifier (3.1.9)
+    uglifier (3.1.10)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
@@ -270,7 +270,7 @@ PLATFORMS
 
 DEPENDENCIES
   alfredos_view_tool (~> 0.1.0)
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap (~> 4.0.0.alpha2)
   byebug
   carrierwave (~> 1.0)
   carrierwave-aws (~> 1.0, >= 1.0.2)
