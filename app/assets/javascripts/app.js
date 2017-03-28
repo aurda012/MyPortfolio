@@ -130,6 +130,23 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+    var icon = $('.hunting-icon-blog');
+    var nav = $('nav');
+    var safety = $('.hunter-safety-container');
+    $('.hunting-icon-blog').click(function() {
+      icon.toggleClass('active')
+    if(icon.hasClass('active')) {
+      nav.animate({top: 225}, 0);
+      safety.animate({top: '0'}, 350);
+    }
+    else {
+      nav.animate({top: 0}, 0);
+      safety.animate({top: '-240px'}, 350);
+    }
+  });
+});
+
 $(document).ready(function (){
 
   var canvas = document.getElementById("myBarChart");
