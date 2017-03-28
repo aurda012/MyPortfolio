@@ -863,6 +863,7 @@ canvas {
   font-family: 'Work Sans', sans-serif;
   padding: 0 115px 50px 90px;
   margin-top: 160px;
+  margin-bottom: 60px;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
@@ -878,7 +879,7 @@ canvas {
 }
 
 .social-container {
-  margin: 60px auto;
+  margin: 0 auto;
   max-width: 530px;
 }
 .social-icon {
@@ -971,7 +972,8 @@ canvas {
     color: grey;
   }
   .contact-container {
-    height: 55vh;
+    height: 500px;
+    margin-bottom: 0;
   }
   .footer {
     display: none;
@@ -1059,7 +1061,6 @@ canvas {
     padding: 20% 0;
   }
   .social-container {
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1202,7 +1203,8 @@ canvas {
   }
 
   .contact-container {
-    margin-bottom: 0;
+    height: 500px;
+    margin-bottom: 200px;
   }
   .footer {
     display: none;
