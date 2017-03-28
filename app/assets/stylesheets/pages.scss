@@ -1026,18 +1026,6 @@ canvas {
     margin: 0 auto 80px auto;
     position: relative;
   }
-  .blaze-logo {
-    font-size: 3em;
-  }
-  .opcode-logo {
-    font-size: 2em;
-  }
-  .weather-logo {
-    font-size: 2em;
-  }
-  .bandaloop-logo {
-    font-size: 3em;
-  }
 }
 @media only screen and (max-width: 768px) {
   .header-container {
@@ -1064,7 +1052,7 @@ canvas {
     display: block;
   }
   .tools-container {
-    height: 75vh;
+    height: 90vh;
   }
   .chart-title {
     font-size: 3em;
@@ -1089,8 +1077,7 @@ canvas {
   }
 
   .contact-blog {
-    padding: 0 50px 50px;
-    margin-bottom: 50px;
+    display: none;
   }
 
   .social-icon {
