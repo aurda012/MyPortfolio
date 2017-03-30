@@ -1,0 +1,12 @@
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+//= require html.sortable
+//= require tether
+//= require jquery.lazyload.min
+//= require gritter
+//= require cocoon
+//= require portfolios.coffee
+//= require cable
+//= require turbolinks
+//= require bootstrap-sprockets

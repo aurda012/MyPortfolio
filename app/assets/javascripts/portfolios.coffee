@@ -1,3 +1,15 @@
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+//= require html.sortable
+//= require tether
+//= require jquery.lazyload.min
+//= require gritter
+//= require cocoon
+//= require cable
+//= require turbolinks
+//= require bootstrap-sprockets
+
 ready = undefined
 set_positions = undefined
 
