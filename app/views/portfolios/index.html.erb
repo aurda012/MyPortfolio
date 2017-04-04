@@ -4,7 +4,9 @@
 <div id="work" class="album text-muted">
   <div class="container">
     <%= source_helper("alert alert-warning") %>
-
+    <div class="portfolio-header" style="color: white;">
+      My <b>Work</b>
+    </div>
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
