@@ -1,4 +1,7 @@
-<div class="album text-muted">
+<%= render 'shared/portfolio_nav' unless logged_in?(:site_admin) %>
+<%= render 'shared/portfolio_logged_in' if logged_in?(:site_admin) %> 
+<%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+<div id="work" class="album text-muted">
   <div class="container">
     <%= source_helper("alert alert-warning") %>
 
@@ -7,3 +10,5 @@
     </div>
   </div>
 </div>
+<%= render 'shared/portfolio_contact' %>
+<%= render 'shared/portfolio_footer' %>

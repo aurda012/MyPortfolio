@@ -1,0 +1,11 @@
+<ul class="nav pull-right" style="padding-right: 20px;">
+  <li class="nav-item">
+    <a class="nav-link" href="/"><button type="button" class="btn btn-secondary">Home</button></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/portfolios/new"><button type="button" class="btn btn-secondary">New Item!</button></a>
+  </li>
+  <li class="nav-item">
+    <button type="button" class="btn btn-secondary" style="margin-top: 8px;"><%= link_to("Logout", destroy_user_session_path, method: :delete) %></button>
+  </li>
+</ul>

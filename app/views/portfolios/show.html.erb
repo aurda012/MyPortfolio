@@ -1,3 +1,8 @@
+<ul class="nav pull-right" style="padding-right: 20px;">
+  <li class="nav-item">
+    <a class="nav-link" href="javascript:history.back()"><button type="button" class="btn btn-secondary">Back</button></a>
+  </li>
+</ul>
 <div class="container portfolio-container">
   <div class="row">
     <div class="col-md-7">
@@ -21,8 +26,12 @@
       <p><%= t.name %></p>
       <% end %>
 
+      <div class="pull-right">
+        <%= link_to "View Live!", "http://#{@portfolio_item.website}", class: "btn btn-outline-primary" %>
+      </div>
+
       <% if logged_in?(:site_admin) %>
-        <div class="">
+        <div class="pull-right">
           <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
         </div>
       <% end %>

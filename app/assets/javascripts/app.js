@@ -154,7 +154,7 @@ $(document).ready(function (){
 
 
   var data = {
-    labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
+    labels: ["HTML", "JavaScript", "CSS", "SQL", "Ruby On Rails", "UX/UI"],
     datasets: [
         {
             label: "Skills",
@@ -174,7 +174,7 @@ $(document).ready(function (){
               'rgba(0, 0, 0, .2)',
               'rgba(0, 0, 0, .2)'
             ],
-            data: [95, 75, 90, 60, 50, 70, 0],
+            data: [95, 75, 90, 75, 90, 75, 0],
         }
     ]
   };
@@ -204,7 +204,7 @@ $(document).ready(function (){
 
 
   var data = {
-    labels: ["HTML", "JavaScript", "CSS", "Angular", "Ruby On Rails", "UX/UI"],
+    labels: ["HTML", "JavaScript", "CSS", "SQL", "Ruby On Rails", "UX/UI"],
     datasets: [
         {
             label: "Skills",
@@ -224,7 +224,7 @@ $(document).ready(function (){
               'rgba(0, 0, 0, .2)',
               'rgba(0, 0, 0, .2)'
             ],
-            data: [95, 75, 90, 60, 50, 70],
+            data: [95, 75, 90, 75, 90, 75],
         }
     ]
   };
