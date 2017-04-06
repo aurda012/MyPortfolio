@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require html.sortable
 //= require tether
 //= require jquery.lazyload.min
+//= require html.sortable
 //= require gritter
 //= require cocoon
 //= require cable
